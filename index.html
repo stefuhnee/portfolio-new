@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Stefanie Hansen's Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="vendor/styles/normalize.css">
+    <link rel="stylesheet" type="text/css" href="styles/fonts.css">
+    <link href='https://fonts.googleapis.com/css?family=Herr+Von+Muellerhoff|Open+Sans+Condensed|Playfair+Display' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="styles/base.css">
+    <link rel="stylesheet" type="text/css" href="styles/layout.css">
+    <link rel="stylesheet" type="text/css" href="styles/module.css">
+    <link rel="stylesheet" type="text/css" href="styles/state.css">
+
+    <script id="project-template" type="text/x-handlebars-template">
+      <article class="article-box" data-category="{{category}}">
+        <a href="{{location}}" class="project-url"><h1>{{title}}</h1></a>
+        <h2>{{publishStatus}}</h2>
+        <ul>
+          <li class="preview" data-img-src="{{imgSrc}}">Preview</li>
+          <li>|</li>
+          <a href="{{location}}" class="project-url"><li>Explore</li></a>
+        </ul>
+        <section class="project-body">{{{projectBody}}}</section>
+        <a href="#" class="read-on">Continue Reading</a>
+        <a href="#" class="read-less">Less</a>
+      </article>
+    </script>
+
+    <script id="category-filter-template" type="text/x-handlebars-template">
+      <a href="#"><li>{{category}}</li></a>
+    </script>
+
+    <script id="repo-template" type="text/x-handlebars-template">
+      <a href="{{html_url}}"><li>{{name}}</li></a>
+      <li>Last pushed on: {{pushed_at}}</li>
+      <li>Forks: {{forks}}</li>
+    </script>
+
+  </head>
+  <body>
+
+    <div class="overlay"><img></div>
+
+    <header id="main-header">
+      <h1>S.</h1>
+
+      <nav class="filters">
+        <h2 class="filters-heading">Filter</h2>
+        <div class="filters-list">
+          <h2 class="filters-category-heading">Category</h2>
+          <ul>
+          </ul>
+          <div class="filters-exit icon-arrow-right2"></div>
+        </div>
+      </nav>
+    </header>
+
+    <nav class="social">
+      <ul>
+        <li><a href="https://github.com/stefuhnee" target="_blank" class="icon icon-github"></a></li>
+        <li><a href="https://www.linkedin.com/in/stefanie-hansen-16297519" target="_blank" class="icon icon-linkedin2"></a></li>
+        <li><a href="https://twitter.com/_stefuhnee" target="_blank" class="icon icon-twitter"></a></li>
+        <li><a href="https://www.facebook.com/stefuhn33" target="_blank" class="icon icon-facebook"></a></li>
+      </ul>
+    </nav>
+
+    <nav class="main-nav">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section id="projects" class="tab-content">
+      </section>
+
+      <section id="about" class="tab-content">
+        <header>
+            <img src="img/mountain.png">
+          <div id="about-heading-group">
+            <h1>Stefanie Hansen
+            <span>is a developer seeking to create a beautiful and functional user experience.</span></h1>
+          </div>
+        </header>
+        <div class="about-body">
+        </div>
+      </section>
+
+      <footer>
+        <span>&copy; 2016 Stefanie Hansen</span>
+      </footer>
+
+    </main>
+  </body>
+</html>
