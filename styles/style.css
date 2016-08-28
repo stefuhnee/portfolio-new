@@ -1,0 +1,54 @@
+body {
+  width: 100%;
+  position: relative;
+  background-color: #fafcfd;
+  font-family: 'Kameron', sans-serif;
+  font-weight: 300;
+  color: #303030; }
+
+@font-face {
+  font-family: 'icomoon';
+  src: url("fonts/icomoon.eot?8ixlaj");
+  src: url("fonts/icomoon.eot?8ixlaj#iefix") format("embedded-opentype"), url("fonts/icomoon.ttf?8ixlaj") format("truetype"), url("fonts/icomoon.woff?8ixlaj") format("woff"), url("fonts/icomoon.svg?8ixlaj#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-arrow-right2:before {
+  content: "\e904"; }
+
+.icon-facebook:before {
+  content: "\e900"; }
+
+.icon-twitter:before {
+  content: "\e902"; }
+
+.icon-github:before {
+  content: "\e901"; }
+
+.icon-linkedin2:before {
+  content: "\e903"; }
+
+ul {
+  list-style: none; }
+
+header {
+  margin: 0 auto;
+  text-align: center; }
+
+nav {
+  font-family: 'Kameron', sans-serif;
+  text-transform: uppercase; }
+
+/*# sourceMappingURL=style.css.map */
