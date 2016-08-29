@@ -1,11 +1,3 @@
-body {
-  width: 100%;
-  position: relative;
-  background-color: #fafcfd;
-  font-family: 'Kameron', sans-serif;
-  font-weight: 300;
-  color: #303030; }
-
 @font-face {
   font-family: 'icomoon';
   src: url("fonts/icomoon.eot?8ixlaj");
@@ -40,15 +32,30 @@ body {
 .icon-linkedin2:before {
   content: "\e903"; }
 
+body {
+  width: 100%;
+  position: relative;
+  background-color: #ffffff;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: 300;
+  color: #303030; }
+
+h1 {
+  font-family: 'Playfair Display', sans-serif;
+  font-size: 4rem;
+  color: #331E36; }
+
 ul {
   list-style: none; }
 
 header {
   margin: 0 auto;
   text-align: center; }
+  header img {
+    max-width: 100%; }
 
 nav {
-  font-family: 'Kameron', sans-serif;
+  font-family: 'Open Sans Condensed', sans-serif;
   text-transform: uppercase; }
 
 /*# sourceMappingURL=style.css.map */
