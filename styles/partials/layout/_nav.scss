@@ -1,4 +1,22 @@
 nav {
   font-family: 'Open Sans Condensed', sans-serif;
   text-transform: uppercase;
+
+  ul {
+    display: flex;
+    width: 100%;
+    padding: 0;
+
+    li {
+      flex-direction: row;
+      justify-content: space-around;
+      flex-grow: 1;
+    }
+  }
+}
+
+@media only screen and (min-width: 640px) {
+  li {
+    font-size: 5vmin;
+  }
 }
