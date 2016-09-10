@@ -1,6 +1,7 @@
 nav {
   font-family: 'Open Sans Condensed', sans-serif;
   text-transform: uppercase;
+  background-color: $dark-green;
 
   ul {
     display: flex;
@@ -11,6 +12,8 @@ nav {
       flex-direction: row;
       justify-content: space-around;
       flex-grow: 1;
+      padding: 1% 0;
+      text-align: center;
     }
   }
 }
