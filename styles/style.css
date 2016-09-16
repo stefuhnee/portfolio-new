@@ -1,0 +1,109 @@
+@font-face {
+  font-family: 'icomoon';
+  src: url("fonts/icomoon.eot?8ixlaj");
+  src: url("fonts/icomoon.eot?8ixlaj#iefix") format("embedded-opentype"), url("fonts/icomoon.ttf?8ixlaj") format("truetype"), url("fonts/icomoon.woff?8ixlaj") format("woff"), url("fonts/icomoon.svg?8ixlaj#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-arrow-right2:before {
+  content: "\e904"; }
+
+.icon-facebook:before {
+  content: "\e900"; }
+
+.icon-twitter:before {
+  content: "\e902"; }
+
+.icon-github:before {
+  content: "\e901"; }
+
+.icon-linkedin2:before {
+  content: "\e903"; }
+
+body {
+  width: 100%;
+  position: relative;
+  background-color: #AAAE7F;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-weight: 300;
+  color: #303030; }
+
+a {
+  text-decoration: none;
+  color: #ffffff; }
+
+h1 {
+  font-family: 'Playfair Display', sans-serif;
+  font-size: 10vmin;
+  color: #000000; }
+
+@media only screen and (min-width: 640px) {
+  h1 {
+    font-size: 15vmin; } }
+ul {
+  list-style: none; }
+
+header {
+  text-align: center;
+  width: 100%; }
+  header div {
+    position: relative;
+    display: inline; }
+  header img {
+    max-width: 100%;
+    border-top: 2px solid #000000;
+    border-bottom: 2px solid #000000; }
+  header h1 {
+    color: #143109;
+    margin: 0;
+    font-size: 8vh;
+    text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; }
+
+@media only screen and (min-width: 640px) {
+  header img {
+    height: 75vh;
+    border: 2px solid #000000; }
+  header h1 {
+    font-size: 12vh; } }
+nav {
+  font-family: 'Open Sans Condensed', sans-serif;
+  text-transform: uppercase;
+  background-color: #143109; }
+  nav ul {
+    display: flex;
+    width: 100%;
+    padding: 0;
+    margin: 0; }
+    nav ul li {
+      flex-direction: row;
+      justify-content: space-around;
+      flex-grow: 1;
+      padding: 2vh 0;
+      text-align: center; }
+
+.main-nav {
+  margin-bottom: 2vh; }
+
+.social {
+  margin-top: 2vh; }
+
+@media only screen and (min-width: 640px) {
+  nav li {
+    font-size: 5vmin; } }
+a:hover {
+  color: #AAAE7F;
+  text-decoration: overline; }
+
+/*# sourceMappingURL=style.css.map */
