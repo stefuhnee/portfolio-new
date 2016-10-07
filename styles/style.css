@@ -80,6 +80,7 @@ header {
 main {
   height: 60vh;
   width: 80%;
+  top: 20vh;
   margin: 0 auto;
   position: relative;
   background-color: #ffffff;
@@ -87,8 +88,7 @@ main {
 
 nav {
   font-family: 'Open Sans Condensed', sans-serif;
-  text-transform: uppercase;
-  background-color: #FCA311; }
+  text-transform: uppercase; }
   nav ul {
     display: flex;
     width: 100%;
@@ -98,17 +98,25 @@ nav {
       flex-direction: row;
       justify-content: space-around;
       flex-grow: 1;
-      padding: 2vh 0;
+      padding: 0;
       text-align: center; }
 
 .main-nav {
   width: 100%;
   position: absolute;
   bottom: 0;
-  outline: 1px solid black; }
+  outline: 1px solid black;
+  background-color: #FCA311; }
 
 .social {
+  position: absolute;
+  top: 10vh;
+  right: 10vw;
+  width: 20vw;
+  height: 5vh;
   margin-top: 2vh; }
+  .social li {
+    background-color: #000000; }
 
 @media only screen and (min-width: 640px) {
   nav li {
