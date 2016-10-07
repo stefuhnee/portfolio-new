@@ -1,7 +1,7 @@
 nav {
   font-family: 'Open Sans Condensed', sans-serif;
   text-transform: uppercase;
-  background-color: $dark-green;
+  background-color: $orange;
 
   ul {
     display: flex;
@@ -20,7 +20,10 @@ nav {
 }
 
 .main-nav {
-  margin-bottom: $gutter;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  outline: 1px solid black;
 }
 
 .social {
