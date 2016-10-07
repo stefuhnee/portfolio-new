@@ -78,9 +78,9 @@ header {
   header h1 {
     font-size: 12vh; } }
 main {
-  height: 60vh;
+  height: 70vh;
   width: 80%;
-  top: 20vh;
+  top: 15vh;
   margin: 0 auto;
   position: relative;
   background-color: #ffffff;
@@ -89,17 +89,8 @@ main {
 nav {
   font-family: 'Open Sans Condensed', sans-serif;
   text-transform: uppercase; }
-  nav ul {
-    display: flex;
-    width: 100%;
-    padding: 0;
-    margin: 0; }
-    nav ul li {
-      flex-direction: row;
-      justify-content: space-around;
-      flex-grow: 1;
-      padding: 0;
-      text-align: center; }
+  nav li {
+    display: inline-block; }
 
 .main-nav {
   width: 100%;
@@ -107,22 +98,37 @@ nav {
   bottom: 0;
   outline: 1px solid black;
   background-color: #FCA311; }
+  .main-nav ul {
+    position: relative;
+    text-align: center; }
+    .main-nav ul li {
+      float: right;
+      padding: 5vh 2vh; }
 
 .social {
   position: absolute;
-  top: 10vh;
+  top: 7vh;
   right: 10vw;
   width: 20vw;
-  height: 5vh;
-  margin-top: 2vh; }
-  .social li {
-    background-color: #000000; }
+  font-size: 5vh; }
+  .social ul {
+    text-align: right; }
+    .social ul li {
+      background-color: #000000; }
+    .social ul a {
+      padding: 1vh;
+      transition: 350ms all; }
 
 @media only screen and (min-width: 640px) {
   nav li {
     font-size: 5vmin; } }
-a:hover {
-  color: #ffffff;
-  text-decoration: overline; }
+.main-nav a:hover {
+  bottom: 1vh; }
+
+.social a:hover {
+  color: #FCA311; }
+
+.main-nav li:hover {
+  margin-top: -5px; }
 
 /*# sourceMappingURL=style.css.map */

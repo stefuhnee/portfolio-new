@@ -1,4 +1,17 @@
-a:hover {
-  color: $white;
-  text-decoration: overline;
+.main-nav  {
+  a:hover {
+    bottom: 1vh;
+  }
+}
+
+.social {
+  a:hover {
+    color: $orange;
+  }
+}
+
+.main-nav {
+  li:hover {
+    margin-top: -5px;
+  }
 }
