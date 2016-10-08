@@ -3,26 +3,32 @@
   height: 54vh;
   text-align: center;
   padding: $gutter 0;
-  display: table;
 
-  .intro {
-    display: table-cell;
-    vertical-align: middle;
+  .left {
+    position: relative;
     width: 50%;
     height: 54vh;
+    text-align: center;
 
-    .hello {
-      font-size: 8vh;
-      font-family: 'Yellowtail';
-    }
-
-    .name {
-      text-transform: uppercase;
-      font-family: 'Open Sans Condensed';
-      font-weight: 300;
+    .intro {
       display: inline-block;
-      font-size: 8vh;
+      transition: transform 650ms ease-in-out;
+      padding: 20vh 0;
+
+      .hello {
+        font-size: 8vh;
+        font-family: 'Yellowtail';
+      }
+
+      .name {
+        text-transform: uppercase;
+        font-family: 'Open Sans Condensed';
+        font-weight: 300;
+        display: inline-block;
+        font-size: 8vh;
+      }
     }
+
   }
 
   .bio {
