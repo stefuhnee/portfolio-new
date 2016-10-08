@@ -1,0 +1,34 @@
+.about {
+  width: 100%;
+  height: 54vh;
+  text-align: center;
+  padding: $gutter 0;
+  display: table;
+
+  .intro {
+    display: table-cell;
+    vertical-align: middle;
+    width: 50%;
+    height: 54vh;
+
+    .hello {
+      font-size: 8vh;
+      font-family: 'Yellowtail';
+    }
+
+    .name {
+      text-transform: uppercase;
+      font-family: 'Open Sans Condensed';
+      font-weight: 300;
+      display: inline-block;
+      font-size: 8vh;
+    }
+  }
+
+  .bio {
+    width: 50%;
+    height: 54vh;
+  }
+
+
+}
