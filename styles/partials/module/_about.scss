@@ -24,6 +24,7 @@
       }
 
       .hello {
+        color: $blue;
         font-size: 8vh;
         font-family: 'Yellowtail';
       }
@@ -46,11 +47,29 @@
     height: 54vh;
     text-align: center;
 
-    p {
+    section {
+      width: 100%;
       display: table-cell;
       vertical-align: middle;
-      padding: 0 $gutter;
       line-height: 1.5;
+      position: relative;
+      text-align: center;
+
+      div {
+        width: 100%;
+        margin: 0 auto;
+        position: absolute;
+        bottom: $gutter;
+
+        p {
+          line-height: 1;
+          font-size: 3vh;
+        }
+      }
+
+      p {
+        padding: 0 $gutter;
+      }
     }
   }
 

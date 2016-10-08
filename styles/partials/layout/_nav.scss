@@ -14,16 +14,16 @@ nav {
   text-align: center;
 
   ul {
+    margin-bottom: -2px;
     display: inline-block;
     width: 100%;
-    padding: 0;
+    bottom: 0;
 
     li {
       float: right;
       position: relative;
       text-align: center;
       width: 25%;
-      padding: 6vh 0;
 
       div {
         position: absolute;
