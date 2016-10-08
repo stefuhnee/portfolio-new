@@ -150,9 +150,12 @@ nav {
     height: 54vh;
     text-align: center; }
     .about .left .intro {
-      display: inline-block;
-      transition: transform 650ms ease-in-out;
-      padding: 20vh 0; }
+      transition: transform 650ms ease-in-out; }
+      .about .left .intro img {
+        transition: visibility 0s ease-out 0s;
+        visibility: hidden;
+        border: 1px solid black;
+        max-width: 100%; }
       .about .left .intro .hello {
         font-size: 8vh;
         font-family: 'Yellowtail'; }
@@ -185,6 +188,10 @@ nav {
   text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; }
 
 .about .left .intro:hover {
-  transform: translateY(100px); }
+  transform: translateY(11vh); }
+  .about .left .intro:hover img {
+    transition: visibility 350ms ease-out 1s;
+    transform: translateY(-5vh);
+    visibility: visible; }
 
 /*# sourceMappingURL=style.css.map */

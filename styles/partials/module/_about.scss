@@ -11,9 +11,14 @@
     text-align: center;
 
     .intro {
-      display: inline-block;
       transition: transform 650ms ease-in-out;
-      padding: 20vh 0;
+
+      img {
+        transition: visibility 0s ease-out 0s;
+        visibility: hidden;
+        border: 1px solid black;
+        max-width: 100%;
+      }
 
       .hello {
         font-size: 8vh;
@@ -37,4 +42,9 @@
   }
 
 
+}
+
+@media only screen and (min-width: 640px) {
+  .intro {
+  }
 }
