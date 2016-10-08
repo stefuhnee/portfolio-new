@@ -11,7 +11,21 @@
 }
 
 .main-nav {
-  li:hover {
-    margin-top: -5px;
+  div:hover {
+    margin-top: -7px;
+    padding-top: 6vh;
+    padding-bottom: 6vh;
+    background-color: $orange;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    -webkit-box-shadow: 1px 1px 1px 1px rgba(0,0,0,1);
+    -moz-box-shadow: 1px 1px 1px 1px rgba(0,0,0,1);
+    box-shadow: 1px 1px 1px 1px rgba(0,0,0,1);
+    text-shadow:
+      1px 1px 0 #000,
+     -1px -1px 0 #000,
+      1px -1px 0 #000,
+     -1px 1px 0 #000,
+      1px 1px 0 #000;
   }
 }
