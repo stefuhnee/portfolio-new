@@ -47,6 +47,9 @@ a {
 .clearfix {
   clear: both; }
 
+.bold {
+  font-weight: 700; }
+
 h1 {
   font-family: 'Playfair Display', sans-serif;
   font-size: 10vmin;
@@ -146,16 +149,19 @@ nav {
   padding: 2vh 0; }
   .about .left {
     position: relative;
+    float: left;
     width: 50%;
     height: 54vh;
-    text-align: center; }
+    text-align: center;
+    box-shadow: 2px 0 0 #E5E5E5; }
     .about .left .intro {
       transition: transform 650ms ease-in-out; }
       .about .left .intro img {
-        transition: visibility 0s ease-out 0s;
         visibility: hidden;
-        border: 1px solid black;
-        max-width: 100%; }
+        max-width: 95%;
+        -webkit-box-shadow: 0px 0px 5px 1px black;
+        -moz-box-shadow: 0px 0px 0px 1px black;
+        box-shadow: 2px 1px 5px 1px black; }
       .about .left .intro .hello {
         font-size: 8vh;
         font-family: 'Yellowtail'; }
@@ -165,9 +171,17 @@ nav {
         font-weight: 300;
         display: inline-block;
         font-size: 8vh; }
-  .about .bio {
+  .about .right {
+    display: table;
+    float: right;
     width: 50%;
-    height: 54vh; }
+    height: 54vh;
+    text-align: center; }
+    .about .right p {
+      display: table-cell;
+      vertical-align: middle;
+      padding: 0 2vh;
+      line-height: 1.5; }
 
 .main-nav a:hover {
   bottom: 1vh; }
@@ -190,7 +204,7 @@ nav {
 .about .left .intro:hover {
   transform: translateY(11vh); }
   .about .left .intro:hover img {
-    transition: visibility 350ms ease-out 1s;
+    transition: visibility 350ms ease-out 650ms;
     transform: translateY(-5vh);
     visibility: visible; }
 
