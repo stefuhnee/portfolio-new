@@ -30,11 +30,11 @@
   }
 }
 
-.about .left .intro:hover {
-  transform: translateY(11vh);
+.about .left .intro .greeting:hover {
+  transform: translateY(15vh);
 
   img {
-    transition: visibility 350ms ease-out 650ms;
-    visibility: visible;
+    transition: display 350ms ease-out 650ms;
+    display: block;
   }
 }
