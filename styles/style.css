@@ -78,6 +78,7 @@ nav {
     display: inline-block; }
 
 .main-nav {
+  height: 12vh;
   width: 100%;
   outline: 1px solid black;
   background-color: #ED9C2A;
@@ -133,24 +134,20 @@ nav {
       margin-left: -1px; } }
 .about {
   width: 100%;
-  height: 54vh;
-  text-align: center;
-  padding: 2vh 0; }
+  height: 58vh;
+  text-align: center; }
   .about .left {
     position: relative;
-    float: left;
-    width: 50%;
     height: 54vh;
     text-align: center;
-    box-shadow: 2px 0 0 #E5E5E5; }
+    width: 100%;
+    padding: 2vh 0; }
     .about .left .intro {
+      height: 54vh;
       transition: transform 650ms ease-in-out; }
       .about .left .intro img {
         visibility: hidden;
-        max-width: 95%;
-        -webkit-box-shadow: 0px 0px 5px 1px black;
-        -moz-box-shadow: 0px 0px 0px 1px black;
-        box-shadow: 2px 1px 5px 1px black; }
+        max-width: 55%; }
       .about .left .intro .hello {
         color: #C84630;
         font-size: 8vh;
@@ -162,10 +159,20 @@ nav {
         display: inline-block;
         font-size: 8vh; }
   .about .right {
+    display: none; }
+
+@media only screen and (min-width: 640px) {
+  .about .left {
+    float: left;
+    width: 50%;
+    box-shadow: 2px 0 0 #E5E5E5; }
+  .about .right {
+    display: block;
     display: table;
     float: right;
     width: 50%;
     height: 54vh;
+    padding: 2vh 0;
     text-align: center; }
     .about .right section {
       width: 100%;
@@ -183,8 +190,7 @@ nav {
           line-height: 1;
           font-size: 3vh; }
       .about .right section p {
-        padding: 0 2vh; }
-
+        padding: 0 2vh; } }
 .main-nav a:hover {
   bottom: 1vh; }
 
@@ -207,7 +213,6 @@ nav {
   transform: translateY(11vh); }
   .about .left .intro:hover img {
     transition: visibility 350ms ease-out 650ms;
-    transform: translateY(-5vh);
     visibility: visible; }
 
 /*# sourceMappingURL=style.css.map */
