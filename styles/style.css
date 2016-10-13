@@ -81,7 +81,7 @@ nav {
   height: 12vh;
   width: 100%;
   outline: 1px solid black;
-  background-color: #ED9C2A;
+  background-color: #2d728e;
   text-align: center; }
   .main-nav ul {
     margin-bottom: -2px;
@@ -137,7 +137,6 @@ nav {
   height: 58vh;
   text-align: center; }
   .about .left {
-    position: relative;
     height: 54vh;
     text-align: center;
     width: 100%;
@@ -145,16 +144,23 @@ nav {
     .about .left .intro {
       display: table;
       width: 100%;
-      height: 54vh; }
+      height: 54vh;
+      position: relative; }
       .about .left .intro img {
-        display: none;
-        max-width: 55%; }
+        opacity: 0;
+        position: absolute;
+        max-height: 90%;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%); }
       .about .left .intro .greeting {
-        transition: transform 650ms ease-in-out;
+        transition: opacity 550ms ease-in-out 100ms;
         display: table-cell;
         vertical-align: middle; }
+        .about .left .intro .greeting h1 {
+          transition: transform 650ms ease-in-out; }
       .about .left .intro .hello {
-        color: #C84630;
+        color: #2d728e;
         font-size: 8vh;
         font-family: 'Yellowtail'; }
       .about .left .intro .name {
@@ -199,13 +205,13 @@ nav {
   bottom: 1vh; }
 
 .social a:hover {
-  color: #ED9C2A; }
+  color: #2d728e; }
 
 .main-nav div:hover {
   margin-top: -7px;
   padding-top: 5vh;
   padding-bottom: 5vh;
-  background-color: #ED9C2A;
+  background-color: #2d728e;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   -webkit-box-shadow: 0px 0px 0px 1px black;
@@ -213,10 +219,14 @@ nav {
   box-shadow: 0px 0px 0px 1px black;
   text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; }
 
-.about .left .intro .greeting:hover {
-  transform: translateY(15vh); }
-  .about .left .intro .greeting:hover img {
-    transition: display 350ms ease-out 650ms;
-    display: block; }
+.about .left .intro:hover .greeting {
+  opacity: 0; }
+  .about .left .intro:hover .greeting h1 {
+    transform: translateY(20vh); }
+.about .left .intro:hover img {
+  transition: opacity 650ms ease-in-out 650ms;
+  display: table-cell;
+  vertical-align: middle;
+  opacity: 1; }
 
 /*# sourceMappingURL=style.css.map */

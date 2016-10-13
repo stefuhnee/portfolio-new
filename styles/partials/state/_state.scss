@@ -30,11 +30,21 @@
   }
 }
 
-.about .left .intro .greeting:hover {
-  transform: translateY(15vh);
+.about .left .intro:hover {
+
+  .greeting {
+    opacity: 0;
+
+    h1 {
+      transform: translateY(20vh);
+    }
+  }
+
 
   img {
-    transition: display 350ms ease-out 650ms;
-    display: block;
+    transition: opacity 650ms ease-in-out 650ms;
+    display: table-cell;
+    vertical-align: middle;
+    opacity: 1;
   }
 }

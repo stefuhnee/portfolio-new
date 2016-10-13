@@ -4,7 +4,6 @@
   text-align: center;
 
   .left {
-    position: relative;
     height: 54vh;
     text-align: center;
     width: 100%;
@@ -14,20 +13,29 @@
       display: table;
       width: 100%;
       height: 54vh;
+      position: relative;
 
       img {
-        display: none;
-        max-width: 55%;
+        opacity: 0;
+        position: absolute;
+        max-height: 90%;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
       }
 
       .greeting {
-        transition: transform 650ms ease-in-out;
+        transition: opacity 550ms ease-in-out 100ms;
         display: table-cell;
         vertical-align: middle;
+
+        h1 {
+          transition: transform 650ms ease-in-out;
+        }
       }
 
       .hello {
-        color: $blue;
+        color: $orange;
         font-size: 8vh;
         font-family: 'Yellowtail';
       }
@@ -36,7 +44,6 @@
         text-transform: uppercase;
         font-family: 'Open Sans Condensed';
         font-weight: 300;
-        // display: inline-block;
         font-size: 8vh;
       }
     }
